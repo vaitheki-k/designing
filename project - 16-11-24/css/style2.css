@@ -1,0 +1,129 @@
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg,#971190, #f078e6);
+    color: white;
+    position: sticky;
+    top: 0;
+    font-size: 23px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color:yellow;
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar.scrolled {
+    background: #0056b3;
+  }
+
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+  }
+/* about section */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fdf8e3; 
+    overflow-x: hidden;
+  }
+
+  .wave-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .wave {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, #8d3c89, #f078e6, #ffe96b);
+    animation: wave-animation 6s infinite linear;
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .about-section {
+    text-align: center;
+    padding: 40px 20px;
+    position: absolute;
+  }
+
+  .about-section h1 {
+    color: #971190;
+    font-size: 36px;
+  }
+
+  .about-section p {
+    color: #444;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #f078e6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background: #971190;
+  }
+
+  

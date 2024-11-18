@@ -1,0 +1,105 @@
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(90deg,#71b10c, #a5e46a);
+    color: white;
+    position: sticky;
+    top: 0;
+    font-size: 23px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    position: relative;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color:rgb(184, 32, 32);
+  }
+  
+  .nav-links li a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar.scrolled {
+    background: #0056b3;
+  } 
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+  }
+/* about section */
+
+.course-section {
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #fefefe;
+}
+
+/* Enroll Button Styles */
+.enroll-button {
+  background-color: #a5e46a;
+  color:rgb(184, 32, 32);
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.enroll-button:hover {
+  background-color: #65b11f;
+  transform: scale(1.05);
+}
+
+.enroll-button:active {
+  transform: scale(1);
+}
+
+
